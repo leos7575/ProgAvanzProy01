@@ -1,20 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>WishList</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    @if (wishlist.productos().length === 0) {
+      <ion-item>
+        <ion-label>Tu lista está vacía</ion-label>
+      </ion-item>
+    } @else {
+      @for (p of wishlist.productos(); track p.id) {
+        <ion-item lines="full">
+          <ion-button fill="clear" expand="block" class="wishlist-btn" (click)="toggle(p.id)">
+            <div class="wishlist-row">
+
+              <ion-thumbnail class="thumb">
+                <img [src]="p.img" />
+              </ion-thumbnail>
+
+              <span class="wishlist-text">{{ p.nombre }}</span>
+
+              <div class="right">
+                <span class="wishlist-precio">$ {{ p.precio }}</span>
+
+                @if (seleccionado(p.id)) {
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                }
+              </div>
+
+            </div>
+          </ion-button>
+        </ion-item>
+      }
+    }
+
+  </ion-list>
 </ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      @if (wishlist.total() === 0) {
+        Total a pagar: $0
+      } @else {
+        Total a pagar: $ {{ wishlist.total() }}
+      }
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

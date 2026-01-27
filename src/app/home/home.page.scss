@@ -25,3 +25,52 @@
 #container a {
   text-decoration: none;
 }
+.wishlist-btn {
+  width: 100%;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  margin: 0;
+}
+
+.wishlist-btn::part(native) {
+  width: 100%;
+  justify-content: flex-start;
+  text-transform: none;
+  color: var(--ion-text-color);
+}
+
+.wishlist-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.img-l {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wishlist-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wishlist-precio {
+  font-weight: 700;
+}
+
+ion-icon {
+  font-size: 22px;
+}
