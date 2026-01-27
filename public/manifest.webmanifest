@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "appProyecto1",
+  "short_name": "appProyecto1",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
