@@ -2,8 +2,8 @@
    "name": "appProyecto1",
   "short_name": "appProyecto1",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "/",
+  "start_url": "/",
   "theme_color": "#1976d2",
   "background_color": "#ffffff",
   "icons": [
