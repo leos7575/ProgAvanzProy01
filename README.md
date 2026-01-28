@@ -32,23 +32,6 @@ El objetivo es demostrar la transición de la sintaxis "Legacy" de Angular a los
 
 ---
 
-## 📦 Instalación y Ejecución
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/leos7575/ProgAvanzProy01.git
-   ```
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-3. **Ejecutar servidor de desarrollo:**
-   ```bash
-   ng serve
-   ```
-4. Navega a `http://localhost:4200/`.
-
----
 
 ## 💡 Reflexión: Desafío de la Nueva Sintaxis
 
