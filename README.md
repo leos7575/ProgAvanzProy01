@@ -16,8 +16,6 @@ El objetivo es demostrar la transición de la sintaxis "Legacy" de Angular a los
 
 ## 🛠️ Arquitectura y Tecnologías (Modern Standards)
 
-Este proyecto cumple con el patrón **MVC** y la **Regla de Oro** (cero sintaxis Legacy).
-
 ### 1. Modelo (M)
 - Uso de **interfaces fuertemente tipadas** para los artículos (`id`, `nombre`, `precio`).
 - **Cero uso de `any`**.
