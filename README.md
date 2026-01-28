@@ -5,6 +5,14 @@ Esta aplicación es una **Progressive Web App (PWA)** desarrollada con **Angular
 
 ---
 
+## 🌐 Acceso a la Aplicación
+
+Puedes acceder a la página mediante el siguiente link:
+
+👉 **[https://wishlist-lemon-nine.vercel.app/home](https://wishlist-lemon-nine.vercel.app/home)**
+
+---
+
 ## 🚀 Descripción del Proyecto
 El objetivo es demostrar la transición de la sintaxis "Legacy" de Angular a los nuevos estándares de la industria. La aplicación permite:
 
